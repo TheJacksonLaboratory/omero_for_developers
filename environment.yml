@@ -1,0 +1,8 @@
+name: omero_devs
+channels:
+  - defaults
+dependencies:
+  - python=3.6
+  - omero-py
+  - zeroc-ice36-python
+  - jupyterlab
