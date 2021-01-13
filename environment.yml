@@ -147,4 +147,4 @@ dependencies:
     - typing-extensions==3.7.4.3
     - vispy==0.6.6
     - wrapt==1.12.1
-    - ezomero==0.0.3
+    - ezomero==0.0.4
