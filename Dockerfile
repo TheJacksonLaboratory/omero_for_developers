@@ -2,11 +2,11 @@ FROM jupyter/datascience-notebook:r-4.0.3
 
 # Install Jupyterlab
 USER root
-RUN pip install --upgrade jupyterlab-git
+RUN pip install --upgrade jupyterlab jupyterlab-git
+RUN jupyter lab build
 COPY requirements_container.txt .
 RUN pip install -r requirements_container.txt
-RUN jupyter labextension install @jupyterlab/git
-RUN jupyter serverextension enable --py jupyterlab_git
+RUN jupyter server extension enable --py jupyterlab_git
 RUN pip install nbgitpuller
 RUN jupyter serverextension enable --py nbgitpuller --sys-prefix
 
