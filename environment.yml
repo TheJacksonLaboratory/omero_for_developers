@@ -9,3 +9,6 @@ dependencies:
   - matplotlib=3.3.4
   - pip:
     - ezomero==0.1.0
+    - ome-zarr==0.0.17
+    - omero-cli-zarr==0.0.9
+    - zarr==2.6.1
