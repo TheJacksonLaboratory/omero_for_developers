@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook:r-4.0.3
+FROM jupyter/datascience-notebook:python-3.8.8
 
 # Install Jupyterlab
 USER root

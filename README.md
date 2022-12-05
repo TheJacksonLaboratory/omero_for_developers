@@ -23,10 +23,17 @@ conda env create -f environment_mac.yml
  ```
 
 ## If you use Docker:
+On Windows:
 ```
 docker build -t omero_devs -f Dockerfile .
+docker run -it -p 8888:8888 -v <local_path_to_mount>:/home/jovyan/mounted omero_devs
 ```
-NOTE: does not currently work on ARM (M1) Macs because zeroc-ice wheel expects x86 architecture
+
+On Mac:
+```
+docker build --platform linux/amd64 -t omero_devs -f Dockerfile .
+docker run -it -p 8888:8888 -v <local_path_to_mount>:/home/jovyan/mounted --platform linux/amd64 omero_devs
+```
 
 # Workshop notebooks
 
