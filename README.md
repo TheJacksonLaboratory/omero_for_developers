@@ -17,11 +17,6 @@ On Mac (works on Mac OS 12.6 with M1 chip as of Oct 2022):
 conda env create -f environment_mac.yml
 ```
 
-## If you use pip:
- ```
- pip -r requirements.txt
- ```
-
 ## If you use Docker:
 On Windows:
 ```
@@ -32,7 +27,8 @@ docker run -it -p 8888:8888 -v <local_path_to_mount>:/home/jovyan/mounted omero_
 On Mac:
 ```
 docker build --platform linux/amd64 -t omero_devs -f Dockerfile .
-docker run -it -p 8888:8888 -v <local_path_to_mount>:/home/jovyan/mounted --platform linux/amd64 omero_devs
+docker run -it -p 8888:8888 -v <local_path_to_mount>:/home/jovyan/mounted \
+--platform linux/amd64 omero_devs
 ```
 
 # Workshop notebooks
