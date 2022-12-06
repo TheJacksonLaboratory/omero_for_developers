@@ -130,3 +130,6 @@ dmypy.json
 
 # File with omero configs
 config.py
+
+# General macOS
+.DS_Store
