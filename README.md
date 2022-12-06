@@ -7,14 +7,8 @@ Materials for the **OMERO for Developers** workshop at the Jackson Laboratory, w
 # Set up your environment
 
 ## If you use Conda:
-On Windows (worked on Windows as of 2020, has not been checked recently): 
 ```
-conda env create -f environment_windows.yml
-```
-
-On Mac (works on Mac OS 12.6 with M1 chip as of Oct 2022): 
-```
-conda env create -f environment_mac.yml
+conda env create -f environment.yml
 ```
 
 ## If you use Docker:

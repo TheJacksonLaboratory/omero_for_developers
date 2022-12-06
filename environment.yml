@@ -1,9 +1,9 @@
 name: omero_devs
 channels:
-  - ome
   - defaults
   - conda-forge
 dependencies:
+  - python=3.8.8
   - pip=22.2.2
   - zeroc-ice=3.6.5
   - omero-py=5.12.0
