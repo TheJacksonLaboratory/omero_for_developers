@@ -9,5 +9,6 @@ dependencies:
     - setuptools==65.4.1
     - ezomero==1.2.1
     - jupyterlab==4.0.5
+    - matplotlib==3.7.2
     - ome-zarr==0.8.0
     - omero-cli-zarr==0.5.3
