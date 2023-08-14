@@ -7,7 +7,7 @@ dependencies:
   - zeroc-ice=3.6.5
   - pip:
     - setuptools==65.4.1
-    - ezomero==1.2.1
+    - ezomero==2.0.0
     - jupyterlab==4.0.5
     - matplotlib==3.7.2
     - ome-zarr==0.8.0
