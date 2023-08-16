@@ -11,19 +11,8 @@ Materials for the **OMERO for Developers** workshop at the Jackson Laboratory, w
 conda env create -f environment.yml
 ```
 
-## If you use Docker:
-On Windows:
-```
-docker build -t omero_devs -f Dockerfile .
-docker run -it -p 8888:8888 -v <local_path_to_mount>:/home/jovyan/mounted omero_devs
-```
-
-On Mac:
-```
-docker build --platform linux/amd64 -t omero_devs -f Dockerfile .
-docker run -it -p 8888:8888 -v <local_path_to_mount>:/home/jovyan/mounted \
---platform linux/amd64 omero_devs
-```
+## Otherwise:
+You'll need to install dependencies yourself. This workshop will use `jupyterlab`, `ezomero`, `matplotlib`, `ome-zarr` and `omero-cli-zarr`. Latest versions should be fine.
 
 # Workshop notebooks
 
