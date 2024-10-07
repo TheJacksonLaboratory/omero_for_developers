@@ -2,13 +2,13 @@ name: omero_devs
 channels:
   - conda-forge
 dependencies:
-  - python=3.8.15
-  - pip=23.2.1
   - zeroc-ice=3.6.5
+  - pip
+  - python
   - pip:
-    - setuptools==65.4.1
-    - ezomero==2.0.0
-    - jupyterlab==4.0.5
-    - matplotlib==3.7.2
-    - ome-zarr==0.8.0
-    - omero-cli-zarr==0.5.3
+    - ezomero==3.1.0
+    - jupyterlab==4.2.5
+    - matplotlib==3.9.2
+    - ome-zarr==0.9.0
+    - omero-cli-zarr==0.5.5
+    - requests==2.31.0
